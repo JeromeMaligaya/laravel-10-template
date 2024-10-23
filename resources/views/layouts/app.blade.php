@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{{ $title }}</title>
-
-        @vite(['resources/js/app.js', 'resources/css/app.css'])
     </head>
     <body>
         {{-- header --}}
@@ -19,5 +17,8 @@
 
         {{-- footer --}}
         @include('partials.footer')
+
+        @vite('resources/js/app.js')
+
     </body>
 </html>
