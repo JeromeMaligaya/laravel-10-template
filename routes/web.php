@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $title = "boolean laravel-10-template";
 
-    return view('layouts.app', compact("title"));
+    return view('layouts.app');
 });
